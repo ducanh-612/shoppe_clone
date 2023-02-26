@@ -1,0 +1,144 @@
+
+/* header */
+#header {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+
+}
+.header__heading {
+    position: relative;
+    display: flex;
+}
+.header__logo {
+    height: 40px;
+    margin: 20px 0; 
+}
+.header__text{
+    font-size: 24px;
+    display: block;
+    margin: 30px 16px;
+}
+.support__link {
+    display: block;
+    margin: 38px 0;
+}
+
+.support__link,
+.register__rule-link {
+    color: #ee4d2d;
+}
+/* container */
+#container {
+    height: 600px;
+    background-image: linear-gradient(#f53e2d, #ff6533);
+    display: flex;
+    justify-content: center;
+}
+/* left */
+.slogan{
+    align-self: center;
+    text-align: center;
+    width: 40%;
+}
+.slogan__logo {
+    width: 200px;
+}
+.slogan__text{
+    width: 70%;
+    margin:40px auto 0;
+    font-size: 30px;
+    color: #fff;
+}
+
+/* right */
+.form__register {
+    align-self: center;
+    background-color: #fff;
+    width: 400px;
+    border-radius: 4px;
+}
+
+.form__container {
+    padding: 28px;
+}
+
+.form__header {
+    margin-bottom: 28px;
+    font-size: 24px;
+}
+
+.input__number {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%
+}
+
+.btn__submit {
+    width: 100%;
+    padding: 12px 0;
+    margin-top: 28px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn__submit:hover {
+    opacity: 0.8;
+}
+
+/* duong chia nho form dang ky */
+.line__divide {
+    position: relative;
+    color: #dbdbdb;
+    margin-top: 28px;
+    text-align: center;
+}
+
+.line__divide-text{
+    display: inline-block;
+    padding: 8px;
+    position: relative;
+    background-color: #fff;
+    z-index: 1;
+    font-size: 14px;
+}
+
+.line__divide::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #dbdbdb;
+    top: 17px;
+}
+
+/* icon face book va google */
+
+.register__other{
+    display: flex;
+    justify-content: space-between;
+    margin: 16px;
+}
+.btn-other {
+    background-color: transparent;
+    border: 1px solid #dbdbdb;
+    border-radius: 2px;
+    padding: 8px 0;
+    width: 45%;
+    cursor: pointer;
+    font-size: 16px;
+}
+/* dieu khoan su dung */
+.register__rule-text {
+    margin-top: 32px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.signin-text{
+    margin-top: 32px;
+    font-size: 14px;
+    text-align: center;
+    color: #dbdbdb;
+}

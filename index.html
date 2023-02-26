@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Free</title>
+    <link rel="stylesheet" href="./assets/style/grid.css">
+    <link rel="stylesheet" href="./assets/style/base.css">
+    <link rel="stylesheet" href="./assets/icon/fontawesome/fontawesome-free-6.3.0-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/style/style.css">
+</head>
+<body>
+    <div id="shoppe">
+        <!-- header shoppe -->
+        <div id="header">
+            <!-- header navbar -->
+            <div id="header__navbar" class="grid wide">
+                <!-- left side -->
+                <ul class="header__navbar-connect">
+                    <li class="header__navbar-item header__navbar-item--separate hover">
+                        Vào cửa hàng trên ứng dụng twoAnh
+                        <!-- QR Code -->
+                        <div class="dowload">
+                            <img src="./assets/image/qr_code.png" alt="QR code" class="qr_code">
+                            <div class="dowload__app">
+                                <img src="./assets/image/google_play.png" alt="Google Play" class="google__play">
+                                <img src="./assets/image/app_store.png" alt="App Store" class="app__store">
+                            </div>
+                        </div>   
+                    </li>
+                    <li class="header__navbar-item ">
+                        Kết nối
+                        <a href="https://www.facebook.com/dev.ducanh" class="header__icon-link">
+                            <i class="fa-brands fa-facebook icon-size header__icon-fb hover"></i>
+                        </a>
+                        <a href="https://www.instagram.com/mynameis_ducanhh/" class="header__icon-link">
+                            <i class="fa-brands fa-instagram icon-size header__icon-ins hover"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- right side -->
+                <ul class="header__navbar-support">
+                    <li class="header__navbar-item hover">
+                        <i class="fa-regular fa-bell header__icon-sp icon-size"></i>
+                        Thông báo
+                        <!-- Thông báo sản phẩm -->
+                        <div class="notify__nav">
+                            <header class="notify__header">
+                                <h3 class="notify__header-text">Thông báo mới nhận</h3>
+                            </header>
+                            <div class="notify__container">
+                                <!-- list sản phẩm -->
+                                <a href="" class="notify__items">
+                                    <p class="product__name">Xác thực chính hãng từ các nguồn sản phẩm của twoAnh</p>
+                                    <p class="product__desc">Giá chỉ còn 325k (giá gốc: 1250k)</p>                                    
+                                </a>
+                                <a href="" class="notify__items">
+                                    <p class="product__name">Xác thực chính hãng từ các nguồn sản phẩm của twoAnh</p>
+                                    <p class="product__desc">Giá chỉ còn 325k (giá gốc: 1250k)</p>
+                                </a>
+                                <a href="" class="notify__items">
+                                    <p class="product__name">Xác thực chính hãng từ các nguồn sản phẩm của twoAnh</p>
+                                    <p class="product__desc">Giá chỉ còn 325k (giá gốc: 1250k)</p>
+                                </a>
+                            </div>
+                            <footer class="notify__footer">
+                                <p class="footer__text">Xem tất cả</p>
+                            </footer>
+                        </div>
+                    </li>
+                    <li class="header__navbar-item hover">
+                        <i class="fa-regular fa-circle-question header__icon-sp icon-size"></i>
+                        Trợ giúp
+                    </li>
+                    <!-- dangki va dangnhap -->
+                    <a href="./signup.html" class="header__navbar-item header__navbar-item--separate hover">Đăng kí</a>
+                    <a href="./signin.html"class="header__navbar-item hover">Đăng nhập</a>
+
+                    <!-- user login -->
+                    
+
+                </ul>
+            </div>
+
+            <!-- header search -->
+            <div id="header__search" class="grid wide">
+                <!-- logo shoppe -->
+                <div class="header__logo">
+                    <a href="./index.html"><img src="./assets/image/logo_shoppe/shoppe white.png" alt="shoppe" class="header__logo-img"></a>
+                </div>
+                <!-- thanh search -->
+                <div class="search__bar">
+                    <div class="search__bar-container">
+                        <input  type="text" class="search__bar-input" placeholder="Nhập để tìm kiếm sản phẩm">
+                        <div class="search__history">
+                            <div class="search__history-header">
+                                <p class="search__history-header-text">Lịch sử tìm kiếm</p>
+                            </div>
+
+                            <div class="search__history-content">
+                                <p class="search__history-content-text">Kem dưỡng da</p>
+                                <p class="search__history-content-text">Kem trị mụn</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="search__bar-sellect">
+                        <span class="search__bar-sellect-text">Trong shop</span>
+                        <i class="fa-solid fa-angle-down sellect-icon"></i>
+                        <div class="sellect__switch">
+                            <p class="sellect-shop">
+                                Trong shop
+                                <i class="fa-solid fa-check check-icon"></i>
+                            </p>
+                            
+                            <p class="sellect-shop">
+                                Ngoài shop
+                            </p>
+                        </div>
+                    </div>
+                    <button class="search__bar-btn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+                <!-- icon gio hang -->
+                <div class="header__cart">
+                    <div class="icon__cart">
+                        <i class="fa-sharp fa-solid fa-cart-shopping header__cart-icon"></i>
+                        <!-- <div class="cart--no-item">
+                            <img src="./assets/image/cart/no_cart.png" alt="no product" class="no-img">
+                            <span class="desc__no-item">Chưa có sản phẩm</span>
+                        </div> -->
+
+                        <div class="cart--have-item">
+                            <div class="cart__header">
+                                <p class="cart__header-heading">Sản phẩm đã được thêm</p>
+                            </div>
+
+                            <div class="cart__body">
+                                <div class="cart__body-product">
+                                    <div class="product__infor">
+                                        <img src="./assets/image/list_product/eyes_cream.jfif" alt="eyes cream" class="product__image">
+                                        <div class="product__name">
+                                            <p class="product__name-text">
+                                                Bộ kem trị vùng mắt
+                                            </p>
+                                            <p class="product__name-subtext">
+                                                Phân loại: Bạc
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="product__cost">
+                                        <p class="product__price-number">
+                                            2.000.000 
+                                            <span class="product-number">x2</span>
+                                        </p>
+                                        <button class="product__delete">Xóa</button>
+                                    </div>
+                                </div>
+
+                                <div class="cart__body-product">
+                                    <div class="product__infor">
+                                        <img src="./assets/image/list_product/eyes_cream.jfif" alt="eyes cream" class="product__image">
+                                        <div class="product__name">
+                                            <p class="product__name-text">
+                                                Bộ kem trị vùng mắt
+                                            </p>
+                                            <p class="product__name-subtext">
+                                                Phân loại: Bạc
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="product__cost">
+                                        <p class="product__price-number">
+                                            2.000.000 
+                                            <span class="product-number">x2</span>
+                                        </p>
+                                        <button class="product__delete">Xóa</button>
+                                    </div>
+                                </div>
+
+                                <div class="cart__body-product">
+                                    <div class="product__infor">
+                                        <img src="./assets/image/list_product/eyes_cream.jfif" alt="eyes cream" class="product__image">
+                                        <div class="product__name">
+                                            <p class="product__name-text">
+                                                Bộ kem trị vùng mắt
+                                            </p>
+                                            <p class="product__name-subtext">
+                                                Phân loại: Bạc
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="product__cost">
+                                        <p class="product__price-number">
+                                            2.000.000 
+                                            <span class="product-number">x2</span>
+                                        </p>
+                                        <button class="product__delete">Xóa</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cart__buy">
+                                <button class="cart__buy-btn">Xem giỏ hàng</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- main shoppe -->
+        <div id="container">
+            <div class="container__shoppe grid wide">
+                <div class="shoppe__content row">
+                    <!-- start category -->
+                    <div class="content__category col l-2">
+                        <div class="category__header">
+                            <p class="category__header-text">DANH MỤC</p>
+                        </div>
+                        <ul class="category__list">
+                            <li class="category__list-item">Trang điểm mặt</li>
+                            <li class="category__list-item">Trang điểm môi</li>
+                            <li class="category__list-item">Trang điểm mắt</li>
+                        </ul>
+                    </div>
+                    <!-- end category -->
+                    <!--begin phan list san pham -->
+                    <div class="shoppe__main col l-10">
+                        <!-- begin phan thanh dieu chinh -->
+                        <div class="product__header">
+                            <!-- start filter -->
+                            <div class="header__filter">
+                                <h3 class="header__filter-title">Sắp xếp theo</h3>
+                                <div class="header__filter-btns">
+                                    <button class="header__filter-item">Phổ biến</button>
+                                    <button class="header__filter-item btn__when-focus">Mới nhất</button>
+                                    <button class="header__filter-item">Bán chạy</button>
+                                </div>
+                                <div class="header__filter-sort-price">
+                                    <p class="price-title">Giá</p>
+                                    <i class="fa-solid fa-angle-down"></i>
+                                    <!-- hien thanh sort price -->
+                                    <div class="sort-price">
+                                        <a href="/" class="sort-price-choice">
+                                            Giá: Thấp đến cao
+                                        </a>
+
+                                        <a href="/" class="sort-price-choice">
+                                            Giá: Cao đến thấp
+                                        </a>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <!-- phan nut doi trang -->
+                            <div class="header__switch-page">
+                                <p class="page__number">
+                                    <span class="number-in-page">1</span>/14
+                                </p>
+                                <div class="switch__page">
+                                    <a href="/" class="switch__page-btn switch__page-btn-previous">
+                                        <i class="fa-solid fa-caret-left"></i>
+                                    </a>
+                                    <a href="/" class="switch__page-btn switch__page-btn-next">
+                                        <i class="fa-solid fa-caret-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end phan thanh dieu chinh  -->
+                        <!-- begin phan san pham -->
+                        <div class="product__body grid">
+                            <div class="row sm-gutter">
+                                <div class="product__item col l-2-4">
+                                    <div class="product__item-box">
+                                        <!-- anh san pham -->
+                                        <img src="./assets/image/list_product/baby moments.webp" alt="" class="item__img">
+                                        <div class="item__desc">
+                                            <h4 class="item__desc-name">
+                                                Set dưỡng trắng Whoo  đông y hoàng cung  Gong Jinh Yang Seol Radiant
+                                            </h4>
+
+                                            <div class="item__desc-price">
+                                                <span class="price-old">1.200.000đ</span>
+                                                <span class="price-new">999.000đ</span>
+                                            </div>
+
+                                            <div class="item__desc-favour">
+                                                <i class="fa-solid fa-heart falvour-liked"></i>
+                                                <div class="favour-rating">
+                                                    <i class="fa-solid fa-star favour-rated"></i>
+                                                    <i class="fa-solid fa-star favour-rated"></i>
+                                                    <i class="fa-solid fa-star favour-rated"></i>
+                                                    <i class="fa-solid fa-star favour-rated"></i>
+                                                    <i class="fa-regular fa-star favour-no-rate"></i>
+                                                </div>
+                                                <span class="favour-bought">88 đã bán</span>
+                                            </div>
+
+                                            <div class="item__desc-origin">
+                                                <span class="origin__trademark">Whoo</span>
+                                                <span class="origin__country">Nhật Bản</span>
+                                            </div>
+                                        </div>
+
+                                        <!-- nhan yeu thich -->
+                                        <div class="stiker__like">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span class="stiker__like-text">Yêu thích</span>
+                                        </div>
+                                        <!-- nhan giam gia -->
+                                        <div class="stiker__discount">
+                                            <span class="stiker__discount-percent">43%</span>
+                                            <span class="stiker__discount-text">Giảm</span>
+                                        </div>  
+                                    </div>
+                                </div>
+
+                                <div class="product__item col l-2-4">
+                                    <div class="product__item-box">
+                                        <!-- anh san pham -->
+                                        <img src="./assets/image/list_product/baby moments.webp" alt="" class="item__img">
+                                        <div class="item__desc">
+                                            <h4 class="item__desc-name">
+                                                Set dưỡng trắng Whoo  đông y hoàng cung  Gong Jinh Yang Seol Radiant
+                                            </h4>
+
+                                            <div class="item__desc-price">
+                                                <span class="price-old">1.200.000đ</span>
+                                                <span class="price-new">999.000đ</span>
+                                            </div>
+
+                                            <div class="item__desc-favour">
+                                                <i class="fa-solid fa-heart falvour-liked"></i>
+                                                <div class="favour-rating">
+                                                    <i class="fa-solid fa-star favour-rated"></i>
+                                                    <i class="fa-solid fa-star favour-rated"></i>
+                                                    <i class="fa-solid fa-star favour-rated"></i>
+                                                    <i class="fa-solid fa-star favour-rated"></i>
+                                                    <i class="fa-regular fa-star favour-no-rate"></i>
+                                                </div>
+                                                <span class="favour-bought">88 đã bán</span>
+                                            </div>
+
+                                            <div class="item__desc-origin">
+                                                <span class="origin__trademark">Whoo</span>
+                                                <span class="origin__country">Nhật Bản</span>
+                                            </div>
+                                        </div>
+
+                                        <!-- nhan yeu thich -->
+                                        <div class="stiker__like">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span class="stiker__like-text">Yêu thích</span>
+                                        </div>
+                                        <!-- nhan giam gia -->
+                                        <div class="stiker__discount">
+                                            <span class="stiker__discount-percent">43%</span>
+                                            <span class="stiker__discount-text">Giảm</span>
+                                        </div>  
+                                    </div>
+                                </div>
+
+                                <div class="product__item col l-2-4">
+                                    <div class="product__item-box">
+                                        <!-- anh san pham -->
+                                        <img src="./assets/image/list_product/baby moments.webp" alt="" class="item__img">
+                                        <div class="item__desc">
+                                            <h4 class="item__desc-name">
+                                                Set dưỡng trắng Whoo  đông y hoàng cung  Gong Jinh Yang Seol Radiant
+                                            </h4>
+
+                                            <div class="item__desc-price">
+                                                <span class="price-old">1.200.000đ</span>
+                                                <span class="price-new">999.000đ</span>
+                                            </div>
+
+                                            <div class="item__desc-favour">
+                                                <i class="fa-solid fa-heart falvour-liked"></i>
+                                                <div class="favour-rating">
+                                                    <i class="fa-solid fa-star favour-rated"></i>
+                                                    <i class="fa-solid fa-star favour-rated"></i>
+                                                    <i class="fa-solid fa-star favour-rated"></i>
+                                                    <i class="fa-solid fa-star favour-rated"></i>
+                                                    <i class="fa-regular fa-star favour-no-rate"></i>
+                                                </div>
+                                                <span class="favour-bought">88 đã bán</span>
+                                            </div>
+
+                                            <div class="item__desc-origin">
+                                                <span class="origin__trademark">Whoo</span>
+                                                <span class="origin__country">Nhật Bản</span>
+                                            </div>
+                                        </div>
+
+                                        <!-- nhan yeu thich -->
+                                        <div class="stiker__like">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span class="stiker__like-text">Yêu thích</span>
+                                        </div>
+                                        <!-- nhan giam gia -->
+                                        <div class="stiker__discount">
+                                            <span class="stiker__discount-percent">43%</span>
+                                            <span class="stiker__discount-text">Giảm</span>
+                                        </div>  
+                                    </div>
+                                </div>
+
+                                <div class="product__item col l-2-4">
+                                    <div class="product__item-box">
+                                        <!-- anh san pham -->
+                                        <img src="./assets/image/list_product/baby moments.webp" alt="" class="item__img">
+                                        <div class="item__desc">
+                                            <h4 class="item__desc-name">
+                                                Set dưỡng trắng Whoo  đông y hoàng cung  Gong Jinh Yang Seol Radiant
+                                            </h4>
+
+                                            <div class="item__desc-price">
+                                                <span class="price-old">1.200.000đ</span>
+                                                <span class="price-new">999.000đ</span>
+                                            </div>
+
+                                            <div class="item__desc-favour">
+                                                <i class="fa-solid fa-heart falvour-liked"></i>
+                                                <div class="favour-rating">
+                                                    <i class="fa-solid fa-star favour-rated"></i>
+                                                    <i class="fa-solid fa-star favour-rated"></i>
+                                                    <i class="fa-solid fa-star favour-rated"></i>
+                                                    <i class="fa-solid fa-star favour-rated"></i>
+                                                    <i class="fa-regular fa-star favour-no-rate"></i>
+                                                </div>
+                                                <span class="favour-bought">88 đã bán</span>
+                                            </div>
+
+                                            <div class="item__desc-origin">
+                                                <span class="origin__trademark">Whoo</span>
+                                                <span class="origin__country">Nhật Bản</span>
+                                            </div>
+                                        </div>
+
+                                        <!-- nhan yeu thich -->
+                                        <div class="stiker__like">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span class="stiker__like-text">Yêu thích</span>
+                                        </div>
+                                        <!-- nhan giam gia -->
+                                        <div class="stiker__discount">
+                                            <span class="stiker__discount-percent">43%</span>
+                                            <span class="stiker__discount-text">Giảm</span>
+                                        </div>  
+                                    </div>
+                                </div>
+
+                                <div class="product__item col l-2-4">
+                                    <div class="product__item-box">
+                                        <!-- anh san pham -->
+                                        <img src="./assets/image/list_product/baby moments.webp" alt="" class="item__img">
+                                        <div class="item__desc">
+                                            <h4 class="item__desc-name">
+                                                Set dưỡng trắng Whoo  đông y hoàng cung  Gong Jinh Yang Seol Radiant
+                                            </h4>
+
+                                            <div class="item__desc-price">
+                                                <span class="price-old">1.200.000đ</span>
+                                                <span class="price-new">999.000đ</span>
+                                            </div>
+
+                                            <div class="item__desc-favour">
+                                                <i class="fa-solid fa-heart falvour-liked"></i>
+                                                <div class="favour-rating">
+                                                    <i class="fa-solid fa-star favour-rated"></i>
+                                                    <i class="fa-solid fa-star favour-rated"></i>
+                                                    <i class="fa-solid fa-star favour-rated"></i>
+                                                    <i class="fa-solid fa-star favour-rated"></i>
+                                                    <i class="fa-regular fa-star favour-no-rate"></i>
+                                                </div>
+                                                <span class="favour-bought">88 đã bán</span>
+                                            </div>
+
+                                            <div class="item__desc-origin">
+                                                <span class="origin__trademark">Whoo</span>
+                                                <span class="origin__country">Nhật Bản</span>
+                                            </div>
+                                        </div>
+
+                                        <!-- nhan yeu thich -->
+                                        <div class="stiker__like">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span class="stiker__like-text">Yêu thích</span>
+                                        </div>
+                                        <!-- nhan giam gia -->
+                                        <div class="stiker__discount">
+                                            <span class="stiker__discount-percent">43%</span>
+                                            <span class="stiker__discount-text">Giảm</span>
+                                        </div>  
+                                    </div>
+                                </div>
+
+                                <div class="product__item col l-2-4">
+                                    <div class="product__item-box">
+                                        <!-- anh san pham -->
+                                        <img src="./assets/image/list_product/baby moments.webp" alt="" class="item__img">
+                                        <div class="item__desc">
+                                            <h4 class="item__desc-name">
+                                                Set dưỡng trắng Whoo  đông y hoàng cung  Gong Jinh Yang Seol Radiant
+                                            </h4>
+
+                                            <div class="item__desc-price">
+                                                <span class="price-old">1.200.000đ</span>
+                                                <span class="price-new">999.000đ</span>
+                                            </div>
+
+                                            <div class="item__desc-favour">
+                                                <i class="fa-solid fa-heart falvour-liked"></i>
+                                                <div class="favour-rating">
+                                                    <i class="fa-solid fa-star favour-rated"></i>
+                                                    <i class="fa-solid fa-star favour-rated"></i>
+                                                    <i class="fa-solid fa-star favour-rated"></i>
+                                                    <i class="fa-solid fa-star favour-rated"></i>
+                                                    <i class="fa-regular fa-star favour-no-rate"></i>
+                                                </div>
+                                                <span class="favour-bought">88 đã bán</span>
+                                            </div>
+
+                                            <div class="item__desc-origin">
+                                                <span class="origin__trademark">Whoo</span>
+                                                <span class="origin__country">Nhật Bản</span>
+                                            </div>
+                                        </div>
+
+                                        <!-- nhan yeu thich -->
+                                        <div class="stiker__like">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span class="stiker__like-text">Yêu thích</span>
+                                        </div>
+                                        <!-- nhan giam gia -->
+                                        <div class="stiker__discount">
+                                            <span class="stiker__discount-percent">43%</span>
+                                            <span class="stiker__discount-text">Giảm</span>
+                                        </div>  
+                                    </div>
+                                </div>
+
+                                <div class="product__item col l-2-4">
+                                    <div class="product__item-box">
+                                        <!-- anh san pham -->
+                                        <img src="./assets/image/list_product/baby moments.webp" alt="" class="item__img">
+                                        <div class="item__desc">
+                                            <h4 class="item__desc-name">
+                                                Set dưỡng trắng Whoo  đông y hoàng cung  Gong Jinh Yang Seol Radiant
+                                            </h4>
+
+                                            <div class="item__desc-price">
+                                                <span class="price-old">1.200.000đ</span>
+                                                <span class="price-new">999.000đ</span>
+                                            </div>
+
+                                            <div class="item__desc-favour">
+                                                <i class="fa-solid fa-heart falvour-liked"></i>
+                                                <div class="favour-rating">
+                                                    <i class="fa-solid fa-star favour-rated"></i>
+                                                    <i class="fa-solid fa-star favour-rated"></i>
+                                                    <i class="fa-solid fa-star favour-rated"></i>
+                                                    <i class="fa-solid fa-star favour-rated"></i>
+                                                    <i class="fa-regular fa-star favour-no-rate"></i>
+                                                </div>
+                                                <span class="favour-bought">88 đã bán</span>
+                                            </div>
+
+                                            <div class="item__desc-origin">
+                                                <span class="origin__trademark">Whoo</span>
+                                                <span class="origin__country">Nhật Bản</span>
+                                            </div>
+                                        </div>
+
+                                        <!-- nhan yeu thich -->
+                                        <div class="stiker__like">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span class="stiker__like-text">Yêu thích</span>
+                                        </div>
+                                        <!-- nhan giam gia -->
+                                        <div class="stiker__discount">
+                                            <span class="stiker__discount-percent">43%</span>
+                                            <span class="stiker__discount-text">Giảm</span>
+                                        </div>  
+                                    </div>
+                                </div>
+
+                                <div class="product__item col l-2-4">
+                                    <div class="product__item-box">
+                                        <!-- anh san pham -->
+                                        <img src="./assets/image/list_product/baby moments.webp" alt="" class="item__img">
+                                        <div class="item__desc">
+                                            <h4 class="item__desc-name">
+                                                Set dưỡng trắng Whoo  đông y hoàng cung  Gong Jinh Yang Seol Radiant
+                                            </h4>
+
+                                            <div class="item__desc-price">
+                                                <span class="price-old">1.200.000đ</span>
+                                                <span class="price-new">999.000đ</span>
+                                            </div>
+
+                                            <div class="item__desc-favour">
+                                                <i class="fa-solid fa-heart falvour-liked"></i>
+                                                <div class="favour-rating">
+                                                    <i class="fa-solid fa-star favour-rated"></i>
+                                                    <i class="fa-solid fa-star favour-rated"></i>
+                                                    <i class="fa-solid fa-star favour-rated"></i>
+                                                    <i class="fa-solid fa-star favour-rated"></i>
+                                                    <i class="fa-regular fa-star favour-no-rate"></i>
+                                                </div>
+                                                <span class="favour-bought">88 đã bán</span>
+                                            </div>
+
+                                            <div class="item__desc-origin">
+                                                <span class="origin__trademark">Whoo</span>
+                                                <span class="origin__country">Nhật Bản</span>
+                                            </div>
+                                        </div>
+
+                                        <!-- nhan yeu thich -->
+                                        <div class="stiker__like">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span class="stiker__like-text">Yêu thích</span>
+                                        </div>
+                                        <!-- nhan giam gia -->
+                                        <div class="stiker__discount">
+                                            <span class="stiker__discount-percent">43%</span>
+                                            <span class="stiker__discount-text">Giảm</span>
+                                        </div>  
+                                    </div>
+                                </div>
+
+                                <div class="product__item col l-2-4">
+                                    <div class="product__item-box">
+                                        <!-- anh san pham -->
+                                        <img src="./assets/image/list_product/baby moments.webp" alt="" class="item__img">
+                                        <div class="item__desc">
+                                            <h4 class="item__desc-name">
+                                                Set dưỡng trắng Whoo  đông y hoàng cung  Gong Jinh Yang Seol Radiant
+                                            </h4>
+
+                                            <div class="item__desc-price">
+                                                <span class="price-old">1.200.000đ</span>
+                                                <span class="price-new">999.000đ</span>
+                                            </div>
+
+                                            <div class="item__desc-favour">
+                                                <i class="fa-solid fa-heart falvour-liked"></i>
+                                                <div class="favour-rating">
+                                                    <i class="fa-solid fa-star favour-rated"></i>
+                                                    <i class="fa-solid fa-star favour-rated"></i>
+                                                    <i class="fa-solid fa-star favour-rated"></i>
+                                                    <i class="fa-solid fa-star favour-rated"></i>
+                                                    <i class="fa-regular fa-star favour-no-rate"></i>
+                                                </div>
+                                                <span class="favour-bought">88 đã bán</span>
+                                            </div>
+
+                                            <div class="item__desc-origin">
+                                                <span class="origin__trademark">Whoo</span>
+                                                <span class="origin__country">Nhật Bản</span>
+                                            </div>
+                                        </div>
+
+                                        <!-- nhan yeu thich -->
+                                        <div class="stiker__like">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span class="stiker__like-text">Yêu thích</span>
+                                        </div>
+                                        <!-- nhan giam gia -->
+                                        <div class="stiker__discount">
+                                            <span class="stiker__discount-percent">43%</span>
+                                            <span class="stiker__discount-text">Giảm</span>
+                                        </div>  
+                                    </div>
+                                </div>
+
+                                <div class="product__item col l-2-4">
+                                    <div class="product__item-box">
+                                        <!-- anh san pham -->
+                                        <img src="./assets/image/list_product/baby moments.webp" alt="" class="item__img">
+                                        <div class="item__desc">
+                                            <h4 class="item__desc-name">
+                                                Set dưỡng trắng Whoo  đông y hoàng cung  Gong Jinh Yang Seol Radiant
+                                            </h4>
+
+                                            <div class="item__desc-price">
+                                                <span class="price-old">1.200.000đ</span>
+                                                <span class="price-new">999.000đ</span>
+                                            </div>
+
+                                            <div class="item__desc-favour">
+                                                <i class="fa-solid fa-heart falvour-liked"></i>
+                                                <div class="favour-rating">
+                                                    <i class="fa-solid fa-star favour-rated"></i>
+                                                    <i class="fa-solid fa-star favour-rated"></i>
+                                                    <i class="fa-solid fa-star favour-rated"></i>
+                                                    <i class="fa-solid fa-star favour-rated"></i>
+                                                    <i class="fa-regular fa-star favour-no-rate"></i>
+                                                </div>
+                                                <span class="favour-bought">88 đã bán</span>
+                                            </div>
+
+                                            <div class="item__desc-origin">
+                                                <span class="origin__trademark">Whoo</span>
+                                                <span class="origin__country">Nhật Bản</span>
+                                            </div>
+                                        </div>
+
+                                        <!-- nhan yeu thich -->
+                                        <div class="stiker__like">
+                                            <i class="fa-solid fa-check"></i>
+                                            <span class="stiker__like-text">Yêu thích</span>
+                                        </div>
+                                        <!-- nhan giam gia -->
+                                        <div class="stiker__discount">
+                                            <span class="stiker__discount-percent">43%</span>
+                                            <span class="stiker__discount-text">Giảm</span>
+                                        </div>  
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>             
+                        <!-- end phan san pham -->
+
+                        <!-- begin chuyen trang -->
+                        <div class="choose__page">
+                            <div class="choose__page-btn">
+                                <a href="#" class="choose__page-link">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </a>
+                            </div>
+                            <div class="choose__page-btn">
+                                <a href="#" class="choose__page-link btn__when-focus">
+                                    1
+                                </a>
+                            </div>
+                            <div class="choose__page-btn">
+                                <a href="#" class="choose__page-link">
+                                    2
+                                </a>
+                            </div>
+                            <div class="choose__page-btn">
+                                <a href="#" class="choose__page-link">
+                                    3
+                                </a>
+                            </div>
+                            <div class="choose__page-btn">
+                                <a href="#" class="choose__page-link">
+                                    4
+                                </a>
+                            </div>
+                            <div class="choose__page-btn">
+                                <a href="#" class="choose__page-link">
+                                    5
+                                </a>
+                            </div>
+                            <div class="choose__page-btn">
+                                <a href="#" class="choose__page-link">
+                                    ...
+                                </a>
+                            </div>
+                            <div class="choose__page-btn">
+                                <a href="#" class="choose__page-link">
+                                    14
+                                </a>
+                            </div>
+                            <div class="choose__page-btn">
+                                <a href="#" class="choose__page-link">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- end chuyen trang -->     
+                    </div>
+                    <!--end phan list san pham -->
+                </div>
+            </div>
+        </div>
+        <!-- footer shoppe -->
+        <div id="footer">
+            <div class="footer__content grid wide">
+                <div class="footer__infor">
+                    <h3 class="footer__infor-heading">THEO DÕI</h3>
+                    <a href="https://www.facebook.com/dev.ducanh" class="footer__infor-link">
+                        <i class="fa-brands fa-facebook"></i>
+                        Facebook
+                    </a>
+                    <a href="https://www.instagram.com/mynameis_ducanhh/" class="footer__infor-link">
+                        <i class="fa-brands fa-instagram"></i>
+                        Instagram
+                    </a>
+                </div>
+
+                <div class="footer__dowload">
+                    <h3 class="footer__dowload-heading">VÀO CỬA HÀNG TRÊN ỨNG DỤNG</h3>
+                    <div class="dowload__container">
+                        <img src="./assets/image/qr_code.png" alt="qr code" class="dowload__container-qr">
+                        <div class="dowload__container-app">
+                            <a href="/" class="dowload__container-app-gg">
+                                <img src="./assets/image/google_play.png" class="logo" alt="">
+                            </a>
+                            <a href="/" class="dowload__container-app-ast">
+                                <img src="./assets/image/app_store.png" class="logo" alt="">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
