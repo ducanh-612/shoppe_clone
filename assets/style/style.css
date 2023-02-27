@@ -978,7 +978,13 @@ a.header__icon-link {
     }
 
     .tablet__category {
+        display: block;
+    }
+
+    .tablet__category-container {
         display: flex;
+        flex-flow: nowrap;
+        max-width: 100%;
     }
 
 }
