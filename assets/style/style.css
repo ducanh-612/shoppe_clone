@@ -926,5 +926,59 @@ a.header__icon-link {
 .logo {
     width: 100px;
 }
-
 /* end footer */
+
+/* phan danh muc san pham hien tren tablet */
+.tablet__category {
+    display: none;
+}
+/* responsive */
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    #header__navbar,
+    .header__switch-page,
+    .header__logo,
+    .header__filter-title {
+        display: none;
+    }
+
+    #header__search {
+        display: flex;
+        padding: 20px 0;
+        margin-top: 0;
+    }   
+    .search__bar-sellect {
+        flex: 3;
+    }
+
+    .header__cart {
+        width: 0;
+        margin: 4px 40px;
+    }
+
+    .icon__cart::before {
+        top: -10px;
+        right:  -55px;
+    }
+
+    .cart--have-item { 
+        right: -50px;
+    }
+
+    .shoppe__content {
+        padding-top: 0;
+    }
+
+    .choose__page {
+        margin-top: 40px;
+    }
+
+    .sellect__switch {
+        z-index: 1;
+    }
+
+    .tablet__category {
+        display: flex;
+    }
+
+}
